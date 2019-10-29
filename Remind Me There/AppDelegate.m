@@ -25,8 +25,8 @@
     
     
 
-    [GMSServices provideAPIKey:@"<Your-GoogleCloud-GMSServices-API-key>"];
-    [GMSPlacesClient provideAPIKey:@"<Your-GoogleCloud-GMSPlacesClient-API-key>"];
+    [GMSServices provideAPIKey:@"<Your-GoogleCloud-API-key>"];
+    [GMSPlacesClient provideAPIKey:@"<Your-GoogleCloud-API-key>"];
     
     
     // This will call the persistentContainer getter.
