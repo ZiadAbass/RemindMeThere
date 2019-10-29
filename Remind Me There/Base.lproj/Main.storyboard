@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hi8-kb-L5n">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Optima.ttc">
+            <string>Optima-Bold</string>
+            <string>Optima-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Existing Reminders View Controller-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController storyboardIdentifier="savedReminders" id="9pv-A4-QxB" customClass="ExistingRemindersViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SaU-FZ-0RE">
+                                <rect key="frame" x="30" y="177.33333333333334" width="354" height="489.66666666666663"/>
+                                <color key="backgroundColor" red="0.9048818210659898" green="0.9048818210659898" blue="0.9048818210659898" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" red="0.31198445431472077" green="0.31198445431472077" blue="0.31198445431472077" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ReminderCell" textLabel="36U-as-5oj" detailTextLabel="a4n-JE-mrJ" style="IBUITableViewCellStyleValue1" id="Qys-pO-iBL">
+                                        <rect key="frame" x="0.0" y="28" width="354" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qys-pO-iBL" id="UzV-MQ-Al8">
+                                            <rect key="frame" x="0.0" y="0.0" width="354" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="36U-as-5oj">
+                                                    <rect key="frame" x="15" y="11.999999999999998" width="33.333333333333336" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="a4n-JE-mrJ">
+                                                    <rect key="frame" x="275.33333333333331" y="11.000000000000002" width="63.666666666666664" height="22.666666666666668"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="19"/>
+                                                    <color key="textColor" red="0.28235294119999998" green="0.36078431370000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="9pv-A4-QxB" id="K27-VS-yEz"/>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="XyD-HY-0Bh"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Saved Reminders" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEv-CY-8Gs">
+                                <rect key="frame" x="30" y="79" width="264" height="95.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="40"/>
+                                <color key="textColor" white="0.34648980029999998" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="En1-nz-FbR">
+                                <rect key="frame" x="350" y="141.33333333333334" width="34" height="36"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="20"/>
+                                <state key="normal" title="Edit">
+                                    <color key="titleColor" white="0.34648980029999998" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="editBtn:" destination="9pv-A4-QxB" eventType="touchUpInside" id="rhL-c6-83G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9TF-ml-KqX">
+                                <rect key="frame" x="336" y="141.33333333333334" width="48" height="36"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="20"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="0.34648980029999998" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneBtn:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Wwt-QZ-SJ9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SaU-FZ-0RE" firstAttribute="top" secondItem="9TF-ml-KqX" secondAttribute="bottom" id="05h-I1-YJG"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="SaU-FZ-0RE" secondAttribute="bottom" constant="25" id="Bxh-3u-o7U"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="XEv-CY-8Gs" secondAttribute="trailing" constant="120" id="CCo-yk-gla"/>
+                            <constraint firstItem="XEv-CY-8Gs" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="30" id="DM1-Wi-rgh"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="9TF-ml-KqX" secondAttribute="trailing" constant="30" id="J58-cA-Phj"/>
+                            <constraint firstItem="SaU-FZ-0RE" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="30" id="Ly2-yB-Q6u"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="En1-nz-FbR" secondAttribute="trailing" constant="30" id="Mje-ZI-BRT"/>
+                            <constraint firstItem="SaU-FZ-0RE" firstAttribute="top" secondItem="En1-nz-FbR" secondAttribute="bottom" id="OCD-1i-M3m"/>
+                            <constraint firstItem="SaU-FZ-0RE" firstAttribute="top" secondItem="XEv-CY-8Gs" secondAttribute="bottom" constant="3" id="UbG-3F-UMn"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="SaU-FZ-0RE" secondAttribute="trailing" constant="30" id="W4j-W0-2JV"/>
+                            <constraint firstItem="XEv-CY-8Gs" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="15" id="yrc-67-wlt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Existing8" selectedImage="Existing8" id="acW-dT-cKf">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="wuh-fb-kGy"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="doneBtnOut" destination="9TF-ml-KqX" id="eP8-L1-9TW"/>
+                        <outlet property="editBtnOut" destination="En1-nz-FbR" id="Qki-Na-dgJ"/>
+                        <outlet property="existingRemindersTable" destination="SaU-FZ-0RE" id="vgI-10-Jp4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-203" y="1608"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BDv-QH-RMc">
+            <objects>
+                <navigationController id="hi8-kb-L5n" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="giA-BB-07c">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.28235294117647058" green="0.36078431370000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="XzN-Pf-pnZ" kind="relationship" relationship="rootViewController" id="pLU-9a-Wrg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eS5-p9-vfe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2241" y="1609"/>
+        </scene>
+        <!--StartingVC-->
+        <scene sceneID="gvQ-db-2FC">
+            <objects>
+                <viewController id="XzN-Pf-pnZ" customClass="StartingVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gEb-WQ-RJH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="70" minValue="30" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="2Ie-5s-uFh">
+                                <rect key="frame" x="149.33333333333337" y="626" width="241.66666666666663" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.3411764706" green="0.36078431370000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="rSlider:" destination="XzN-Pf-pnZ" eventType="valueChanged" id="V6P-3i-HuP"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="radius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxs-FO-pH6">
+                                <rect key="frame" x="183.66666666666666" y="601" width="47" height="21"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
+                                <color key="textColor" red="0.3411764706" green="0.36078431370000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dP6-eE-2yZ">
+                                <rect key="frame" x="291" y="680" width="81" height="36"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="20"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="0.28235294119999998" green="0.36078431370000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="contBtn:" destination="XzN-Pf-pnZ" eventType="touchUpInside" id="a7C-yO-49h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hvo-mg-MQu">
+                                <rect key="frame" x="238" y="563" width="116" height="33"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <state key="normal" title="Choose Existing">
+                                    <color key="titleColor" red="0.3411764706" green="0.36078431370000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseExisting:" destination="XzN-Pf-pnZ" eventType="touchUpInside" id="4Xb-Zq-kNu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gks-03-ARH">
+                                <rect key="frame" x="75" y="563" width="81" height="33"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <state key="normal" title="Take Photo">
+                                    <color key="titleColor" red="0.3411764706" green="0.36078431370000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePhoto:" destination="XzN-Pf-pnZ" eventType="touchUpInside" id="NKc-te-jqX"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HbE-wN-fZV">
+                                <rect key="frame" x="87" y="281" width="240" height="238"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="238" id="MLu-8b-ZJH"/>
+                                    <constraint firstAttribute="width" constant="240" id="ogM-iz-FEu"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxU-l9-iAx">
+                                <rect key="frame" x="51" y="208" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7xb-Hd-Wfg"/>
+                                    <constraint firstAttribute="width" constant="30" id="mRT-Ey-sig"/>
+                                </constraints>
+                                <state key="normal" title="X" image="delete-button.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="xBtn:" destination="XzN-Pf-pnZ" eventType="touchUpInside" id="47E-47-3T5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Region Radius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLb-L4-zqz">
+                                <rect key="frame" x="14.999999999999993" y="631" width="111.33333333333331" height="21"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
+                                <color key="textColor" red="0.3411764706" green="0.36078431370000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GoQ-87-lTg">
+                                <rect key="frame" x="32.333333333333343" y="154" width="350" height="51"/>
+                                <color key="backgroundColor" red="0.84823128169999995" green="0.844438515" blue="0.82383259559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="350" id="ndx-Aj-xe0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="32"/>
+                                <state key="normal" title="      New Reminder     ">
+                                    <color key="titleColor" red="0.28235294119999998" green="0.36078431370000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAwi:" destination="XzN-Pf-pnZ" eventType="touchUpInside" id="I3l-MG-9Zx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6KL-Zm-pAB">
+                                <rect key="frame" x="42" y="680" width="61" height="36"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="20"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.3411764706" green="0.36078431370000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelBtn:" destination="XzN-Pf-pnZ" eventType="touchUpInside" id="p3E-xd-FtO"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nYz-2U-XJ3">
+                                <rect key="frame" x="25" y="71" width="364.33333333333331" height="29"/>
+                                <segments>
+                                    <segment title="New Reminder"/>
+                                    <segment title="Existing Reminders"/>
+                                </segments>
+                                <color key="tintColor" red="0.3411764706" green="0.36078431370000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="segmentedC:" destination="XzN-Pf-pnZ" eventType="valueChanged" id="uFh-vW-lR8"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lxU-l9-iAx" firstAttribute="leading" secondItem="2qy-c4-mho" secondAttribute="leading" constant="51" id="2MN-wL-j2f"/>
+                            <constraint firstItem="GoQ-87-lTg" firstAttribute="centerX" secondItem="2qy-c4-mho" secondAttribute="centerX" id="5Ki-tB-YHE"/>
+                            <constraint firstItem="6KL-Zm-pAB" firstAttribute="leading" secondItem="2qy-c4-mho" secondAttribute="leading" constant="42" id="8Op-s5-saY"/>
+                            <constraint firstItem="2qy-c4-mho" firstAttribute="bottom" secondItem="dP6-eE-2yZ" secondAttribute="bottom" constant="20" id="Jlp-tH-7HN"/>
+                            <constraint firstItem="2qy-c4-mho" firstAttribute="bottom" secondItem="6KL-Zm-pAB" secondAttribute="bottom" constant="20" id="Ln7-XN-hUO"/>
+                            <constraint firstItem="2qy-c4-mho" firstAttribute="bottom" secondItem="2Ie-5s-uFh" secondAttribute="bottom" constant="80" id="LqR-ES-l0u"/>
+                            <constraint firstItem="oLb-L4-zqz" firstAttribute="leading" secondItem="2qy-c4-mho" secondAttribute="leading" constant="15" id="MGN-cr-ue2"/>
+                            <constraint firstItem="nYz-2U-XJ3" firstAttribute="top" secondItem="2qy-c4-mho" secondAttribute="top" constant="7" id="N5e-Aj-bgR"/>
+                            <constraint firstItem="uxs-FO-pH6" firstAttribute="top" secondItem="gks-03-ARH" secondAttribute="bottom" constant="5" id="S87-f4-WX4"/>
+                            <constraint firstItem="uxs-FO-pH6" firstAttribute="centerX" secondItem="2qy-c4-mho" secondAttribute="centerX" id="SEC-Rq-g4h"/>
+                            <constraint firstItem="2qy-c4-mho" firstAttribute="trailing" secondItem="dP6-eE-2yZ" secondAttribute="trailing" constant="42" id="VMO-R3-vYH"/>
+                            <constraint firstItem="2qy-c4-mho" firstAttribute="trailing" secondItem="2Ie-5s-uFh" secondAttribute="trailing" constant="25" id="W4I-HO-Pms"/>
+                            <constraint firstItem="GoQ-87-lTg" firstAttribute="top" secondItem="2qy-c4-mho" secondAttribute="top" constant="90" id="YwY-7k-v9X"/>
+                            <constraint firstItem="2qy-c4-mho" firstAttribute="bottom" secondItem="oLb-L4-zqz" secondAttribute="bottom" constant="84" id="cu6-70-k4c"/>
+                            <constraint firstItem="uxs-FO-pH6" firstAttribute="top" secondItem="Hvo-mg-MQu" secondAttribute="bottom" constant="5" id="dAS-RO-Ce2"/>
+                            <constraint firstItem="2Ie-5s-uFh" firstAttribute="top" secondItem="uxs-FO-pH6" secondAttribute="bottom" constant="4" id="fYe-w0-XLu"/>
+                            <constraint firstItem="lxU-l9-iAx" firstAttribute="top" secondItem="2qy-c4-mho" secondAttribute="top" constant="144" id="gYH-TD-Ho1"/>
+                            <constraint firstItem="nYz-2U-XJ3" firstAttribute="leading" secondItem="2qy-c4-mho" secondAttribute="leading" constant="25" id="hhz-90-Tjw"/>
+                            <constraint firstItem="gks-03-ARH" firstAttribute="leading" secondItem="2qy-c4-mho" secondAttribute="leading" constant="75" id="kDV-qn-dWu"/>
+                            <constraint firstItem="2qy-c4-mho" firstAttribute="trailing" secondItem="Hvo-mg-MQu" secondAttribute="trailing" constant="60" id="lgW-rN-GGp"/>
+                            <constraint firstItem="nYz-2U-XJ3" firstAttribute="centerX" secondItem="2qy-c4-mho" secondAttribute="centerX" id="mhC-6M-N9o"/>
+                            <constraint firstItem="HbE-wN-fZV" firstAttribute="centerX" secondItem="2qy-c4-mho" secondAttribute="centerX" id="sqf-5R-VTz"/>
+                            <constraint firstItem="HbE-wN-fZV" firstAttribute="centerY" secondItem="2qy-c4-mho" secondAttribute="centerY" id="tXa-rv-NRd"/>
+                            <constraint firstItem="2Ie-5s-uFh" firstAttribute="leading" secondItem="oLb-L4-zqz" secondAttribute="trailing" constant="25" id="vad-Jv-6Ii"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2qy-c4-mho"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5dn-31-nCG">
+                        <nil key="title"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnOut" destination="GoQ-87-lTg" id="FGS-97-kuq"/>
+                        <outlet property="cancelOut" destination="6KL-Zm-pAB" id="Mdo-zO-fhX"/>
+                        <outlet property="chooseExistingOut" destination="Hvo-mg-MQu" id="z2w-s7-wSr"/>
+                        <outlet property="contOut" destination="dP6-eE-2yZ" id="vlN-j0-10g"/>
+                        <outlet property="myImage" destination="HbE-wN-fZV" id="zYq-oy-HcI"/>
+                        <outlet property="radiusLabel" destination="oLb-L4-zqz" id="JWy-Ia-T6B"/>
+                        <outlet property="radiusNum" destination="uxs-FO-pH6" id="uC1-46-23m"/>
+                        <outlet property="segmentedOut" destination="nYz-2U-XJ3" id="mZ2-wA-bDd"/>
+                        <outlet property="sliderOut" destination="2Ie-5s-uFh" id="P3v-Tq-MIn"/>
+                        <outlet property="takePhotoOut" destination="gks-03-ARH" id="TI5-cD-5U7"/>
+                        <outlet property="xBtnOut" destination="lxU-l9-iAx" id="5pg-nK-hWU"/>
+                        <segue destination="9pv-A4-QxB" kind="show" identifier="existingTable" id="Dzq-6m-Z3F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MrX-yb-jnm" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1226.0869565217392" y="1608.4239130434785"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Existing8" width="50" height="50"/>
+        <image name="delete-button.png" width="256" height="256"/>
+    </resources>
+</document>

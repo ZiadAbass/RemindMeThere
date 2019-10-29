@@ -1,0 +1,770 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9906ED651FC0A11700821624 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9906ED641FC0A11700821624 /* AppDelegate.m */; };
+		9906ED681FC0A11700821624 /* ExistingRemindersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9906ED671FC0A11700821624 /* ExistingRemindersViewController.m */; };
+		9906ED6E1FC0A11700821624 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9906ED6C1FC0A11700821624 /* Main.storyboard */; };
+		9906ED701FC0A11700821624 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9906ED6F1FC0A11700821624 /* Assets.xcassets */; };
+		9906ED731FC0A11700821624 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9906ED711FC0A11700821624 /* LaunchScreen.storyboard */; };
+		9906ED761FC0A11700821624 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9906ED751FC0A11700821624 /* main.m */; };
+		9906ED801FC0A11700821624 /* Remind_Me_ThereTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9906ED7F1FC0A11700821624 /* Remind_Me_ThereTests.m */; };
+		9906ED8B1FC0A11700821624 /* Remind_Me_ThereUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9906ED8A1FC0A11700821624 /* Remind_Me_ThereUITests.m */; };
+		9924EFA11FD2098B00D2ABA4 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99FBDEC11FCD9FB6003E54E4 /* UserNotifications.framework */; };
+		9926FAD61FDA5F1700AEA422 /* Text Icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9926FAD51FDA5F1600AEA422 /* Text Icon1.png */; };
+		9927AD241FC76555002764BE /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9927AD231FC7654C002764BE /* Contacts.framework */; };
+		9935FCDE20FA6372005A7B1C /* delete-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 9935FCDD20FA6371005A7B1C /* delete-button.png */; };
+		99401CD220D14E210093AFB3 /* RemindMeThere.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 99401CD020D14E210093AFB3 /* RemindMeThere.xcdatamodeld */; };
+		998666901FDA94AC00E3D8B3 /* LaunchingImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 9986668F1FDA94AC00E3D8B3 /* LaunchingImage.png */; };
+		999E60E51FC3B7B500167632 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999E60E41FC3B7AB00167632 /* CoreLocation.framework */; };
+		999E60E71FC3B7C300167632 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999E60E61FC3B7BB00167632 /* MapKit.framework */; };
+		99BE41E81FC1E0F800D21A5F /* AbstractBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 99BE41E71FC1E0F800D21A5F /* AbstractBackground.png */; };
+		99C4D3FD1FD992A800AB0C0B /* LaunchcImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 99C4D3FC1FD992A700AB0C0B /* LaunchcImage.png */; };
+		99C74E1C20F47A4C00C36CED /* StartingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C74E1B20F47A4C00C36CED /* StartingVC.m */; };
+		99C74E2020F47AC100C36CED /* Popup.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C74E1F20F47AC100C36CED /* Popup.m */; };
+		99F7A39F2102A1DB00CF63A6 /* appimage1.png in Resources */ = {isa = PBXBuildFile; fileRef = 99F7A39E2102A1DB00CF63A6 /* appimage1.png */; };
+		9D27D06A0253F29DF39C3499 /* libPods-Remind Me ThereTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5E736248367441EFDE12B1 /* libPods-Remind Me ThereTests.a */; };
+		B0C2C6C0D153310A92304E83 /* libPods-Remind Me There.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3999DF96588A603A7B50EE8 /* libPods-Remind Me There.a */; };
+		FD1D1ABC9A7F80D8F4CE520E /* libPods-Remind Me ThereUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0642305E56F032F5D18960E /* libPods-Remind Me ThereUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9906ED7C1FC0A11700821624 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9906ED581FC0A11700821624 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9906ED5F1FC0A11700821624;
+			remoteInfo = "Remind Me There";
+		};
+		9906ED871FC0A11700821624 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9906ED581FC0A11700821624 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9906ED5F1FC0A11700821624;
+			remoteInfo = "Remind Me There";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5C5E736248367441EFDE12B1 /* libPods-Remind Me ThereTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Remind Me ThereTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C3E38EC1425C59A0724EEA4 /* Pods-Remind Me There.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remind Me There.release.xcconfig"; path = "Pods/Target Support Files/Pods-Remind Me There/Pods-Remind Me There.release.xcconfig"; sourceTree = "<group>"; };
+		75FE72F307F0458CE50A6AC8 /* Pods-Remind Me ThereUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remind Me ThereUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Remind Me ThereUITests/Pods-Remind Me ThereUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7CC406ECDDB5A88829060BDA /* Pods-Remind Me ThereUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remind Me ThereUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Remind Me ThereUITests/Pods-Remind Me ThereUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		80728D13174B00348B091D1A /* Pods-Remind Me ThereTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remind Me ThereTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Remind Me ThereTests/Pods-Remind Me ThereTests.release.xcconfig"; sourceTree = "<group>"; };
+		9906ED601FC0A11700821624 /* Remind Me There.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Remind Me There.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9906ED631FC0A11700821624 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9906ED641FC0A11700821624 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9906ED661FC0A11700821624 /* ExistingRemindersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExistingRemindersViewController.h; sourceTree = "<group>"; };
+		9906ED671FC0A11700821624 /* ExistingRemindersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExistingRemindersViewController.m; sourceTree = "<group>"; };
+		9906ED6D1FC0A11700821624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9906ED6F1FC0A11700821624 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9906ED721FC0A11700821624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9906ED741FC0A11700821624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9906ED751FC0A11700821624 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9906ED7B1FC0A11700821624 /* Remind Me ThereTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Remind Me ThereTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9906ED7F1FC0A11700821624 /* Remind_Me_ThereTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Remind_Me_ThereTests.m; sourceTree = "<group>"; };
+		9906ED811FC0A11700821624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9906ED861FC0A11700821624 /* Remind Me ThereUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Remind Me ThereUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9906ED8A1FC0A11700821624 /* Remind_Me_ThereUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Remind_Me_ThereUITests.m; sourceTree = "<group>"; };
+		9906ED8C1FC0A11700821624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9926FAD51FDA5F1600AEA422 /* Text Icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Text Icon1.png"; sourceTree = "<group>"; };
+		9927AD231FC7654C002764BE /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		9935FCDD20FA6371005A7B1C /* delete-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete-button.png"; sourceTree = "<group>"; };
+		99401CD120D14E210093AFB3 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		9986668F1FDA94AC00E3D8B3 /* LaunchingImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchingImage.png; sourceTree = "<group>"; };
+		999E60E41FC3B7AB00167632 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		999E60E61FC3B7BB00167632 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		99BE41E71FC1E0F800D21A5F /* AbstractBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AbstractBackground.png; sourceTree = "<group>"; };
+		99C4D3FC1FD992A700AB0C0B /* LaunchcImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchcImage.png; sourceTree = "<group>"; };
+		99C74E1A20F47A4C00C36CED /* StartingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartingVC.h; sourceTree = "<group>"; };
+		99C74E1B20F47A4C00C36CED /* StartingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartingVC.m; sourceTree = "<group>"; };
+		99C74E1E20F47AC100C36CED /* Popup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Popup.h; sourceTree = "<group>"; };
+		99C74E1F20F47AC100C36CED /* Popup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Popup.m; sourceTree = "<group>"; };
+		99F7A39E2102A1DB00CF63A6 /* appimage1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appimage1.png; sourceTree = "<group>"; };
+		99FBDEC11FCD9FB6003E54E4 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		B0642305E56F032F5D18960E /* libPods-Remind Me ThereUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Remind Me ThereUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD1F94BD44C71B8A1CF49B49 /* Pods-Remind Me ThereTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remind Me ThereTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Remind Me ThereTests/Pods-Remind Me ThereTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D3999DF96588A603A7B50EE8 /* libPods-Remind Me There.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Remind Me There.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED54D6A90D04B009FAFF9A82 /* Pods-Remind Me There.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remind Me There.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Remind Me There/Pods-Remind Me There.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9906ED5D1FC0A11700821624 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9924EFA11FD2098B00D2ABA4 /* UserNotifications.framework in Frameworks */,
+				9927AD241FC76555002764BE /* Contacts.framework in Frameworks */,
+				999E60E71FC3B7C300167632 /* MapKit.framework in Frameworks */,
+				999E60E51FC3B7B500167632 /* CoreLocation.framework in Frameworks */,
+				B0C2C6C0D153310A92304E83 /* libPods-Remind Me There.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9906ED781FC0A11700821624 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D27D06A0253F29DF39C3499 /* libPods-Remind Me ThereTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9906ED831FC0A11700821624 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD1D1ABC9A7F80D8F4CE520E /* libPods-Remind Me ThereUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DF521F7F0064B1062DEEA1A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED54D6A90D04B009FAFF9A82 /* Pods-Remind Me There.debug.xcconfig */,
+				6C3E38EC1425C59A0724EEA4 /* Pods-Remind Me There.release.xcconfig */,
+				CD1F94BD44C71B8A1CF49B49 /* Pods-Remind Me ThereTests.debug.xcconfig */,
+				80728D13174B00348B091D1A /* Pods-Remind Me ThereTests.release.xcconfig */,
+				7CC406ECDDB5A88829060BDA /* Pods-Remind Me ThereUITests.debug.xcconfig */,
+				75FE72F307F0458CE50A6AC8 /* Pods-Remind Me ThereUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9906ED571FC0A11700821624 = {
+			isa = PBXGroup;
+			children = (
+				9906ED621FC0A11700821624 /* Remind Me There */,
+				9906ED7E1FC0A11700821624 /* Remind Me ThereTests */,
+				9906ED891FC0A11700821624 /* Remind Me ThereUITests */,
+				9906ED611FC0A11700821624 /* Products */,
+				999E60E31FC3B7AA00167632 /* Frameworks */,
+				1DF521F7F0064B1062DEEA1A /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		9906ED611FC0A11700821624 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9906ED601FC0A11700821624 /* Remind Me There.app */,
+				9906ED7B1FC0A11700821624 /* Remind Me ThereTests.xctest */,
+				9906ED861FC0A11700821624 /* Remind Me ThereUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9906ED621FC0A11700821624 /* Remind Me There */ = {
+			isa = PBXGroup;
+			children = (
+				99C74E1D20F47AA000C36CED /* Popup */,
+				9906ED631FC0A11700821624 /* AppDelegate.h */,
+				9906ED641FC0A11700821624 /* AppDelegate.m */,
+				9906ED661FC0A11700821624 /* ExistingRemindersViewController.h */,
+				9906ED671FC0A11700821624 /* ExistingRemindersViewController.m */,
+				99C74E1A20F47A4C00C36CED /* StartingVC.h */,
+				99C74E1B20F47A4C00C36CED /* StartingVC.m */,
+				9906ED6C1FC0A11700821624 /* Main.storyboard */,
+				99401CD020D14E210093AFB3 /* RemindMeThere.xcdatamodeld */,
+				9906ED6F1FC0A11700821624 /* Assets.xcassets */,
+				99C4D3FC1FD992A700AB0C0B /* LaunchcImage.png */,
+				9906ED711FC0A11700821624 /* LaunchScreen.storyboard */,
+				9906ED741FC0A11700821624 /* Info.plist */,
+				9906ED751FC0A11700821624 /* main.m */,
+				99F7A39E2102A1DB00CF63A6 /* appimage1.png */,
+				9935FCDD20FA6371005A7B1C /* delete-button.png */,
+				9926FAD51FDA5F1600AEA422 /* Text Icon1.png */,
+				9986668F1FDA94AC00E3D8B3 /* LaunchingImage.png */,
+				99BE41E71FC1E0F800D21A5F /* AbstractBackground.png */,
+			);
+			path = "Remind Me There";
+			sourceTree = "<group>";
+		};
+		9906ED7E1FC0A11700821624 /* Remind Me ThereTests */ = {
+			isa = PBXGroup;
+			children = (
+				9906ED7F1FC0A11700821624 /* Remind_Me_ThereTests.m */,
+				9906ED811FC0A11700821624 /* Info.plist */,
+			);
+			path = "Remind Me ThereTests";
+			sourceTree = "<group>";
+		};
+		9906ED891FC0A11700821624 /* Remind Me ThereUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9906ED8A1FC0A11700821624 /* Remind_Me_ThereUITests.m */,
+				9906ED8C1FC0A11700821624 /* Info.plist */,
+			);
+			path = "Remind Me ThereUITests";
+			sourceTree = "<group>";
+		};
+		999E60E31FC3B7AA00167632 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99FBDEC11FCD9FB6003E54E4 /* UserNotifications.framework */,
+				9927AD231FC7654C002764BE /* Contacts.framework */,
+				999E60E61FC3B7BB00167632 /* MapKit.framework */,
+				999E60E41FC3B7AB00167632 /* CoreLocation.framework */,
+				D3999DF96588A603A7B50EE8 /* libPods-Remind Me There.a */,
+				5C5E736248367441EFDE12B1 /* libPods-Remind Me ThereTests.a */,
+				B0642305E56F032F5D18960E /* libPods-Remind Me ThereUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99C74E1D20F47AA000C36CED /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				99C74E1E20F47AC100C36CED /* Popup.h */,
+				99C74E1F20F47AC100C36CED /* Popup.m */,
+			);
+			path = Popup;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9906ED5F1FC0A11700821624 /* Remind Me There */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9906ED8F1FC0A11700821624 /* Build configuration list for PBXNativeTarget "Remind Me There" */;
+			buildPhases = (
+				181CC100E41FD662EF75F169 /* [CP] Check Pods Manifest.lock */,
+				9906ED5C1FC0A11700821624 /* Sources */,
+				9906ED5D1FC0A11700821624 /* Frameworks */,
+				9906ED5E1FC0A11700821624 /* Resources */,
+				C5D2377773A55F55AB6CA399 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Remind Me There";
+			productName = "Remind Me There";
+			productReference = 9906ED601FC0A11700821624 /* Remind Me There.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9906ED7A1FC0A11700821624 /* Remind Me ThereTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9906ED921FC0A11700821624 /* Build configuration list for PBXNativeTarget "Remind Me ThereTests" */;
+			buildPhases = (
+				30930387F69706583F0065BD /* [CP] Check Pods Manifest.lock */,
+				9906ED771FC0A11700821624 /* Sources */,
+				9906ED781FC0A11700821624 /* Frameworks */,
+				9906ED791FC0A11700821624 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9906ED7D1FC0A11700821624 /* PBXTargetDependency */,
+			);
+			name = "Remind Me ThereTests";
+			productName = "Remind Me ThereTests";
+			productReference = 9906ED7B1FC0A11700821624 /* Remind Me ThereTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9906ED851FC0A11700821624 /* Remind Me ThereUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9906ED951FC0A11700821624 /* Build configuration list for PBXNativeTarget "Remind Me ThereUITests" */;
+			buildPhases = (
+				E6E8574D6E4B1D597604122F /* [CP] Check Pods Manifest.lock */,
+				9906ED821FC0A11700821624 /* Sources */,
+				9906ED831FC0A11700821624 /* Frameworks */,
+				9906ED841FC0A11700821624 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9906ED881FC0A11700821624 /* PBXTargetDependency */,
+			);
+			name = "Remind Me ThereUITests";
+			productName = "Remind Me ThereUITests";
+			productReference = 9906ED861FC0A11700821624 /* Remind Me ThereUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9906ED581FC0A11700821624 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "University Of Leeds";
+				TargetAttributes = {
+					9906ED5F1FC0A11700821624 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					9906ED7A1FC0A11700821624 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9906ED5F1FC0A11700821624;
+					};
+					9906ED851FC0A11700821624 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9906ED5F1FC0A11700821624;
+					};
+				};
+			};
+			buildConfigurationList = 9906ED5B1FC0A11700821624 /* Build configuration list for PBXProject "Remind Me There" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9906ED571FC0A11700821624;
+			productRefGroup = 9906ED611FC0A11700821624 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9906ED5F1FC0A11700821624 /* Remind Me There */,
+				9906ED7A1FC0A11700821624 /* Remind Me ThereTests */,
+				9906ED851FC0A11700821624 /* Remind Me ThereUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9906ED5E1FC0A11700821624 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9935FCDE20FA6372005A7B1C /* delete-button.png in Resources */,
+				9906ED731FC0A11700821624 /* LaunchScreen.storyboard in Resources */,
+				99BE41E81FC1E0F800D21A5F /* AbstractBackground.png in Resources */,
+				9906ED701FC0A11700821624 /* Assets.xcassets in Resources */,
+				9906ED6E1FC0A11700821624 /* Main.storyboard in Resources */,
+				998666901FDA94AC00E3D8B3 /* LaunchingImage.png in Resources */,
+				99F7A39F2102A1DB00CF63A6 /* appimage1.png in Resources */,
+				9926FAD61FDA5F1700AEA422 /* Text Icon1.png in Resources */,
+				99C4D3FD1FD992A800AB0C0B /* LaunchcImage.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9906ED791FC0A11700821624 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9906ED841FC0A11700821624 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		181CC100E41FD662EF75F169 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Remind Me There-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30930387F69706583F0065BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Remind Me ThereTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5D2377773A55F55AB6CA399 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Remind Me There/Pods-Remind Me There-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Remind Me There/Pods-Remind Me There-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6E8574D6E4B1D597604122F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Remind Me ThereUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9906ED5C1FC0A11700821624 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9906ED651FC0A11700821624 /* AppDelegate.m in Sources */,
+				99401CD220D14E210093AFB3 /* RemindMeThere.xcdatamodeld in Sources */,
+				99C74E1C20F47A4C00C36CED /* StartingVC.m in Sources */,
+				99C74E2020F47AC100C36CED /* Popup.m in Sources */,
+				9906ED761FC0A11700821624 /* main.m in Sources */,
+				9906ED681FC0A11700821624 /* ExistingRemindersViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9906ED771FC0A11700821624 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9906ED801FC0A11700821624 /* Remind_Me_ThereTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9906ED821FC0A11700821624 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9906ED8B1FC0A11700821624 /* Remind_Me_ThereUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9906ED7D1FC0A11700821624 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9906ED5F1FC0A11700821624 /* Remind Me There */;
+			targetProxy = 9906ED7C1FC0A11700821624 /* PBXContainerItemProxy */;
+		};
+		9906ED881FC0A11700821624 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9906ED5F1FC0A11700821624 /* Remind Me There */;
+			targetProxy = 9906ED871FC0A11700821624 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9906ED6C1FC0A11700821624 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9906ED6D1FC0A11700821624 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9906ED711FC0A11700821624 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9906ED721FC0A11700821624 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9906ED8D1FC0A11700821624 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9906ED8E1FC0A11700821624 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9906ED901FC0A11700821624 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED54D6A90D04B009FAFF9A82 /* Pods-Remind Me There.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2JQ34LJK9;
+				INFOPLIST_FILE = "Remind Me There/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.ac.leeds.Remind-Me-There";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9906ED911FC0A11700821624 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C3E38EC1425C59A0724EEA4 /* Pods-Remind Me There.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2JQ34LJK9;
+				INFOPLIST_FILE = "Remind Me There/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.ac.leeds.Remind-Me-There";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9906ED931FC0A11700821624 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD1F94BD44C71B8A1CF49B49 /* Pods-Remind Me ThereTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2JQ34LJK9;
+				INFOPLIST_FILE = "Remind Me ThereTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.ac.leeds.Remind-Me-ThereTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Remind Me There.app/Remind Me There";
+			};
+			name = Debug;
+		};
+		9906ED941FC0A11700821624 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80728D13174B00348B091D1A /* Pods-Remind Me ThereTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2JQ34LJK9;
+				INFOPLIST_FILE = "Remind Me ThereTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.ac.leeds.Remind-Me-ThereTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Remind Me There.app/Remind Me There";
+			};
+			name = Release;
+		};
+		9906ED961FC0A11700821624 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CC406ECDDB5A88829060BDA /* Pods-Remind Me ThereUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2JQ34LJK9;
+				INFOPLIST_FILE = "Remind Me ThereUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.ac.leeds.Remind-Me-ThereUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Remind Me There";
+			};
+			name = Debug;
+		};
+		9906ED971FC0A11700821624 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75FE72F307F0458CE50A6AC8 /* Pods-Remind Me ThereUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2JQ34LJK9;
+				INFOPLIST_FILE = "Remind Me ThereUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.ac.leeds.Remind-Me-ThereUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Remind Me There";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9906ED5B1FC0A11700821624 /* Build configuration list for PBXProject "Remind Me There" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9906ED8D1FC0A11700821624 /* Debug */,
+				9906ED8E1FC0A11700821624 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9906ED8F1FC0A11700821624 /* Build configuration list for PBXNativeTarget "Remind Me There" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9906ED901FC0A11700821624 /* Debug */,
+				9906ED911FC0A11700821624 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9906ED921FC0A11700821624 /* Build configuration list for PBXNativeTarget "Remind Me ThereTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9906ED931FC0A11700821624 /* Debug */,
+				9906ED941FC0A11700821624 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9906ED951FC0A11700821624 /* Build configuration list for PBXNativeTarget "Remind Me ThereUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9906ED961FC0A11700821624 /* Debug */,
+				9906ED971FC0A11700821624 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		99401CD020D14E210093AFB3 /* RemindMeThere.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				99401CD120D14E210093AFB3 /* Model.xcdatamodel */,
+			);
+			currentVersion = 99401CD120D14E210093AFB3 /* Model.xcdatamodel */;
+			path = RemindMeThere.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9906ED581FC0A11700821624 /* Project object */;
+}
